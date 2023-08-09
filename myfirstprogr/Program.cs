@@ -10,7 +10,7 @@ namespace myfirstprogr
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello you");
+            Console.WriteLine("Hello ghjkkklyou");
         }
     }
 }
