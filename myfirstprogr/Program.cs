@@ -12,25 +12,24 @@ namespace myfirstprogr
 
         {
             /*Lab1, ex7: 
-             * Scrieti un program care va verifica, daca un numar citit de la tastatura este par sau impar.*/
+             * Scrieti un program care interschimba valoarea a doua variabile intregi.*/
 
-            int i;
-           Console.WriteLine("Acest program va verifica paritatea unui numar");
+            int a, b, aux;
+
+           Console.WriteLine("Acest program va interschimba valoarea a doua variabile intregi");
             
             
-            Console.WriteLine("Introduceti numarul: ");
-             i = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduceti numarul a: ");
+             a = int.Parse(Console.ReadLine());
 
-            if (i % 2 == 0)
-            {
-                Console.WriteLine("Numarul introdus este un numar par");
+            Console.WriteLine("Introduceti numarul b: ");
+            b = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("a={0}, b={1}", a, b);
+            aux = a; a = b; b = aux;
+            Console.Write("Dupa interschimbare a={0}, b={1}", a, b);
 
-            }
-            else
-            {
-                Console.WriteLine("Numarul introdus este un numar impar");
-                
+            Console.ReadKey();
 
 
 
@@ -38,10 +37,12 @@ namespace myfirstprogr
 
 
 
-            }
+
+
+        }
         }
     }
-}
+
 
 
 
