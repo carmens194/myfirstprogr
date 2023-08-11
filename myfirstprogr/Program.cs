@@ -11,24 +11,22 @@ namespace myfirstprogr
         static void Main(string[] args)
 
         {
-           /*Lab1, ex1: Scrieti un program care va calcula media aritmetica a trei numere citite de la tastatura*/
+           /*Lab1, ex1: Scrieti un program care va afisa ultima cifra a unui numar intreg citit de la tastatura*/
 
             
             
             
-            Console.WriteLine("Acest program va calcula media aritmetica a trei numere");
+            Console.WriteLine("Acest program va afisa ultima cifra a unui numar intreg citit de la tastatura");
 
-            Console.WriteLine("Introduceti primul numar:");
-           int primulNumar = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Introduceti numarul:");
 
-            Console.WriteLine("Introduceti al doilea numar:");
-           int alDoileaNumar = int.Parse(Console.ReadLine());
+            int numarIntreg = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Introduceti al treilea numar:");
-            int alTreileaNumar = int.Parse(Console.ReadLine());
 
-            int mediaAritmetica = primulNumar + alDoileaNumar + alTreileaNumar;
-            Console.WriteLine("Media aritmetica este" + mediaAritmetica);
+
+            int lastDigit = numarIntreg % (10);
+            Console.WriteLine("Ultima cifra este" + lastDigit);
 
 
 
