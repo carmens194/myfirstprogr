@@ -11,32 +11,36 @@ namespace myfirstprogr
         static void Main(string[] args)
 
         {
-           /*Lab1, ex1: Scrieti un program care va afisa semnul unui numar citit de la tastatura.
-            daca numarul e pozitiv, va afisa ”+”
-            daca nr e negativ, va afisa ”-”
-            daca nr e 0, va afisa ”0”*/
+            /*Lab1, ex7: 
+             * Scrieti un program care va verifica, daca un numar citit de la tastatura este par sau impar.*/
 
+            int i;
+           Console.WriteLine("Acest program va verifica paritatea unui numar");
             
             
-            
-            Console.WriteLine("Acest program va afisa va afisa semnul unui numar citit de la tastatura");
-            
-            
-            Console.WriteLine("Introduceti numarul:");
+            Console.WriteLine("Introduceti numarul: ");
+             i = int.Parse(Console.ReadLine());
 
-            int numar= int.Parse(Console.ReadLine());
+            if (i % 2 == 0)
+            {
+                Console.WriteLine("Numarul introdus este un numar par");
 
-            if (numar > 0)
-                Console.WriteLine(" + ");
 
-            else if (numar < 0)
-                Console.WriteLine("- ");
+            }
+            else
+            {
+                Console.WriteLine("Numarul introdus este un numar impar");
+                
 
-            else if (numar == 0)
-                Console.WriteLine("0");
+
+
+
+
+
+
+            }
         }
     }
-
 }
 
 
