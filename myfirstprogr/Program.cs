@@ -12,36 +12,41 @@ namespace myfirstprogr
 
         {
             /*Lab1, ex7: 
-             * Scrieti un program care interschimba valoarea a doua variabile intregi.*/
+             * Folosind instructiunea switch, scrieti un program care citind de la tast un nr intreg va verifica urmatoarele.
+             - ”unu” daca nr citit este unu
+             - ” doi” daca nr citit este doi
+             - ”trei, cinci, opt daca nr citite sunt 3,5,8
+             - ”neidentificat” pt orice alt caz*/
 
-            int a, b, aux;
-
-           Console.WriteLine("Acest program va interschimba valoarea a doua variabile intregi");
-            
-            
-            Console.WriteLine("Introduceti numarul a: ");
-             a = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Introduceti numarul b: ");
-            b = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("a={0}, b={1}", a, b);
-            aux = a; a = b; b = aux;
-            Console.Write("Dupa interschimbare a={0}, b={1}", a, b);
-
-            Console.ReadKey();
-
-
-
-
-
+            int numar = int.Parse(Console.ReadLine());
+        
+            switch (numar)
+            {
+                case 0:
+                Console.WriteLine("Numarul este zero");
+                 break;
+                case 1:
+                    Console.WriteLine("Numarul este unu");
+                    break;
+                case 2:
+                    Console.WriteLine("Numarul este doi");
+                    break;
+                case 3:
+                    Console.WriteLine("Numarul este trei");
+                    break;
+                default:
+                    Console.WriteLine("Numar neidentificat");
+                    break;
 
 
+            }
 
 
         }
-        }
+           
     }
+}
+
 
 
 
