@@ -11,25 +11,24 @@ namespace myfirstprogr
         static void Main(string[] args)
 
         {
-           /*Lab1, ex1: Scrieti un program care citind de la tastatura cele trei dimensiuni ale unui paralelipiped dreptunghic
-            * va afisa volumul lui*/
+           /*Lab1, ex1: Scrieti un program care va calcula media aritmetica a trei numere citite de la tastatura*/
 
             
             
             
-            Console.WriteLine("Acest program va calcula volumul paralelipipedului dreptunghic");
+            Console.WriteLine("Acest program va calcula media aritmetica a trei numere");
 
-            Console.WriteLine("Introduceti latimea:");
-           int latime = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduceti primul numar:");
+           int primulNumar = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Introduceti lungimea:");
-           int lungime = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduceti al doilea numar:");
+           int alDoileaNumar = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Introduceti inaltimea:");
-            int inaltime = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduceti al treilea numar:");
+            int alTreileaNumar = int.Parse(Console.ReadLine());
 
-            int volumulParalelipipeduluiDreptunghic = latime * lungime * inaltime;
-            Console.WriteLine("Volumul paralelipipedului este" + volumulParalelipipeduluiDreptunghic);
+            int mediaAritmetica = primulNumar + alDoileaNumar + alTreileaNumar;
+            Console.WriteLine("Media aritmetica este" + mediaAritmetica);
 
 
 
