@@ -11,29 +11,35 @@ namespace myfirstprogr
         static void Main(string[] args)
 
         {
-           /*Lab1, ex1: Scrieti un program care va afisa ultima cifra a unui numar intreg citit de la tastatura*/
+           /*Lab1, ex1: Scrieti un program care va afisa semnul unui numar citit de la tastatura.
+            daca numarul e pozitiv, va afisa ”+”
+            daca nr e negativ, va afisa ”-”
+            daca nr e 0, va afisa ”0”*/
 
             
             
             
-            Console.WriteLine("Acest program va afisa ultima cifra a unui numar intreg citit de la tastatura");
-
+            Console.WriteLine("Acest program va afisa va afisa semnul unui numar citit de la tastatura");
+            
             
             Console.WriteLine("Introduceti numarul:");
 
-            int numarIntreg = int.Parse(Console.ReadLine());
+            int numar= int.Parse(Console.ReadLine());
 
+            if (numar > 0)
+                Console.WriteLine(" + ");
 
+            else if (numar < 0)
+                Console.WriteLine("- ");
 
-            int lastDigit = numarIntreg % (10);
-            Console.WriteLine("Ultima cifra este" + lastDigit);
-
-
-
-
-
-
-
+            else if (numar == 0)
+                Console.WriteLine("0");
         }
     }
+
 }
+
+
+
+
+
